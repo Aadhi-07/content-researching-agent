@@ -93,22 +93,6 @@ cp .env.example .env
 uvicorn main:app --reload
 ```
 
-### Docker Deployment
-
-1. Build the Docker image:
-```bash
-docker build -t content-research-agent .
-```
-
-2. Run with Docker:
-```bash
-docker run -p 8000:8000 --env-file .env content-research-agent
-```
-
-3. Or use Docker Compose:
-```bash
-docker-compose up --build
-```
 
 ## 📡 API Usage
 
