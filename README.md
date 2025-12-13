@@ -2,10 +2,6 @@
 
 An AI-powered research agent that automatically generates research reports and content ideas based on programming and technology topics. The agent integrates with Notion to create structured documents and can be triggered via webhook or API calls.
 
-## !! Make sure to customise the prompt!
-
-Make sure that you customise the agent prompts in the `main.py` file to suit your specific needs. The default prompts are designed for my own use cases, so you may need to adjust them for your specific topics and content formats.
-
 ## 🎯 Use Case
 
 This AI agent is designed for content creators in the programming and technology space. It:
@@ -205,34 +201,6 @@ Here's how to setup the button in Notion:
 ![Notion Webhook Config](docs/webhook-config.png)
 
 
-## 🐳 Docker Deployment
-
-### Using Docker Compose (Recommended)
-
-1. **Production Deployment**:
-```bash
-docker-compose -f docker-compose.prod.yml up -d
-```
-
-2. **Development**:
-```bash
-docker-compose up --build
-```
-
-### Manual Docker Commands
-
-```bash
-# Build
-docker build -t content-research-agent .
-
-# Run
-docker run -d \
-  --name content-research-agent \
-  -p 8000:8000 \
-  --env-file .env \
-  --restart unless-stopped \
-  content-research-agent
-```
 
 ## 🔗 Notion Integration
 
@@ -305,14 +273,6 @@ Run with debug logging:
 export LOG_LEVEL=DEBUG
 uvicorn main:app --reload --log-level debug
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ## 📞 Support
 
