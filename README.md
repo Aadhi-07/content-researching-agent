@@ -257,10 +257,3 @@ Run with debug logging:
 export LOG_LEVEL=DEBUG
 uvicorn main:app --reload --log-level debug
 ```
-
-## 📞 Support
-
-For issues and questions:
-- Create an issue in the repository
-- Check existing documentation
-- Review logs for error details
