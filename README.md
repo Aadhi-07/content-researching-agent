@@ -1,7 +1,7 @@
 # Content Research Agent
 
 An AI-powered research agent that automatically generates research reports and content ideas based on programming and technology topics. The agent integrates with Notion to create structured documents and can be triggered via webhook or API calls.
-m
+
 ## 🎯 Use Case
 
 This AI agent is designed for content creators in the programming and technology space. It:
